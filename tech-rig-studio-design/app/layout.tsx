@@ -1,5 +1,4 @@
 import { Analytics } from '@vercel/analytics/next'
-import Script from 'next/script'
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
@@ -43,11 +42,10 @@ export default function RootLayout({
     <html lang="de">
       <head>
         <meta name="google-adsense-account" content="ca-pub-4697104609201436" />
-        <Script
+        <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4697104609201436"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
         />
       </head>
       <body className="antialiased">
